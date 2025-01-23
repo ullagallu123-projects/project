@@ -9,6 +9,6 @@ module "expense_vpc" {
   environment        = var.environment
   project_name       = var.project_name
   common_tags        = var.common_tags
-  enable_nat         = true
+  enable_nat         = false
   vpc_peering_enable = false
 }
