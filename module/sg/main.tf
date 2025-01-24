@@ -17,6 +17,7 @@ resource "aws_security_group" "example" {
       cidr_blocks = ingress.value.cidr_blocks
     }
   }
+  
 
   egress {
     from_port   = 0
