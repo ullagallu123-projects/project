@@ -24,7 +24,7 @@ run_terraform() {
 echo "Starting Terraform automation script"
 
 # List of folders to process
-folders=("03.bastion-vpn" "02.sg" "01.vpc")
+folders=("05.internal-external" "04.rds" "03.bastion-vpn" "02.sg" "01.vpc")
 
 for folder in "${folders[@]}"; do
     run_terraform "$folder"
