@@ -1,7 +1,7 @@
 module "backend-asg"{
     source = "../../../module/expesne-asg"
-    environment = "qa"
-    project_name = "expense"
+    environment = var.environment
+    project_name = va.project_name
     common_tags = {
     "Terraform"   = "true"
     "Author"      = "sivaramakrishna"
