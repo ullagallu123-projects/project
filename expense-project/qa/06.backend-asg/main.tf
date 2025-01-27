@@ -25,7 +25,7 @@ module "backend-asg"{
   subnets = split(",",data.aws_ssm_parameter.private_subnet_ids.value)
   target_value = 10
 
-  listener_arn = split(",",data.aws_ssm_parameter.http_listner.value)
+  listener_arn = data.aws_ssm_parameter.http_listner.value
   component = "internal"
   zone_name = "bapatlas.site"
 
