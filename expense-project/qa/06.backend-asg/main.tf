@@ -1,5 +1,5 @@
 module "backend-asg"{
-    source = "../../../module/expense-asg"
+    source = "../../../module/expesne-asg"
     environment = "qa"
     project_name = "expense"
     common_tags = {
