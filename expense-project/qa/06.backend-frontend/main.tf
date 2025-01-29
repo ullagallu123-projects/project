@@ -19,7 +19,7 @@ module "backend_asg"{
     asg_max_size = 1
     asg_min_size = 1
     desired_capacity = 1
-    health_check_grace_period  = 90
+    health_check_grace_period  = 300
     subnets = split(",",data.aws_ssm_parameter.private_subnet_ids.value)
 
     target_value = 10
