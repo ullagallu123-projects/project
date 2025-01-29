@@ -17,8 +17,8 @@ data "aws_ami" "backend" {
   }
 }
 
-data "aws_ssm_parameter" "bastion" {
-  name  = "/${var.environment}/${var.project_name}/bastion-sg"
+data "aws_ssm_parameter" "backend" {
+  name  = "/${var.environment}/${var.project_name}/backend-sg"
 }
 
 data "aws_ssm_parameter" "vpc_id" {
