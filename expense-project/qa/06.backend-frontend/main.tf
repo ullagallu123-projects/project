@@ -12,7 +12,7 @@ module "backend_asg"{
     ami_id = data.aws_ami.backend.id
     instance_type = var.instance_type
     key_name = var.key_name
-    vpc_security_group_ids = data.aws_ssm_parameter.bastion.value
+    vpc_security_group_ids = [data.aws_ssm_parameter.bastion.value]
     port = 8080
     health_check_path = "/health"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
