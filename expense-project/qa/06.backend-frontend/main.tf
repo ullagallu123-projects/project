@@ -1,5 +1,5 @@
 module "backend_asg"{
-    source = "../../../module/expense-asg"
+    source = "../../../module/expesne-asg"
     environment = var.environment
     project_name = var.project_name
     common_tags = {
