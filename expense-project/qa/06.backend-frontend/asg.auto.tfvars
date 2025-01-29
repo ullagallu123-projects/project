@@ -1,0 +1,5 @@
+environment = "dev"
+project_name = "expense"
+instance_type = "t3.micro"
+key_name = "bapatlas.site"
+zone_name = "bapatlas.site"

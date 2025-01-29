@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "niha-class-qa"
-    key    = "backend-asg/terraform.tfstate"
+    key    = "backend-frontend-asg/terraform.tfstate"
     region = "us-east-1"
   }
 }

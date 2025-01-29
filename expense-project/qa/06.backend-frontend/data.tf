@@ -17,8 +17,8 @@ data "aws_ami" "backend" {
   }
 }
 
-data "aws_ssm_parameter" "backend" {
-  name  = "/${var.environment}/${var.project_name}/backend-sg"
+data "aws_ssm_parameter" "bastion" {
+  name  = "/${var.environment}/${var.project_name}/bastion-sg"
 }
 
 data "aws_ssm_parameter" "vpc_id" {
@@ -29,6 +29,6 @@ data "aws_ssm_parameter" "private_subnet_ids" {
   name  = "/${var.environment}/${var.project_name}/private-subnet-ids"
 }
 
-data "aws_ssm_parameter" "http_listner" {
-  name  = "/${var.environment}/${var.project_name}/http-listner"
+data "aws_ssm_parameter" "internal_http_listner" {
+  name  = "/${var.environment}/${var.project_name}/internal-http-listner"
 }
