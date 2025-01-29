@@ -1,4 +1,4 @@
-environment = "dev"
+environment = "qa"
 project_name = "expense"
 instance_type = "t3.micro"
 key_name = "bapatlas.site"
